@@ -20,5 +20,10 @@ public class Fornecedorresources {
 		return fornecedores;
 		 
 	}
-
+	public void save (Fornecedor fornecedor) {
+		repository.save(fornecedor);
+	}
+	public void delete (Fornecedor fornecedor) {
+		repository.delete(fornecedor);
+	}
 }

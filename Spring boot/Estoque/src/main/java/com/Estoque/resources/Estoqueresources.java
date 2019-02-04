@@ -15,6 +15,12 @@ public class Estoqueresources {
 	public List<Estoque> getAllEstoque(){
 		List<Estoque> estoque = repository.findAll();
 		return estoque;
-		 
 	}
+	public void save (Estoque estoque) {
+		repository.save(estoque);
+	}
+	public void delete (Estoque estoque) {
+		repository.delete(estoque);
+	}
+	
 }

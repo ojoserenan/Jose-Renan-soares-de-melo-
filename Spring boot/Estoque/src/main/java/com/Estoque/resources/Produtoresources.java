@@ -21,6 +21,11 @@ public class Produtoresources{
 		return produto;
 		 
 	}
-	
+	public void save (Produto produto) {
+		repository.save(produto);
+	}
+	public void delete (Produto produto) {
+		repository.delete(produto);
+	}
 	
 }

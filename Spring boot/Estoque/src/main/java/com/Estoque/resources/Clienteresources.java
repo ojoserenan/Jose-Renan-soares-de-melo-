@@ -17,5 +17,10 @@ public class Clienteresources {
 		return cliente;
 		 
 	}
-
+	public void save (Cliente cliente) {
+		repository.save(cliente);
+	}
+	public void delete (Cliente cliente) {
+		repository.delete(cliente);
+	}
 }

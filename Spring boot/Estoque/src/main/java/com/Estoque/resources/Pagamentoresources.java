@@ -21,5 +21,11 @@ public class Pagamentoresources {
 		return pagamentos;
 		 
 	}
-
+	
+	public void save (Pagamento pagamento) {
+		repository.save(pagamento);
+	}
+	public void delete (Pagamento pagamento) {
+		repository.delete(pagamento);
+	}
 }

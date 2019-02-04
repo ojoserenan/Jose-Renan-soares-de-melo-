@@ -21,4 +21,10 @@ public class Pedidosresources {
 		return pedidos;
 		 
 	}
+	public void save (Pedidos pedidos) {
+		repository.save(pedidos);
+	}
+	public void delete (Pedidos pedidos) {
+		repository.delete(pedidos);
+	}
 }
